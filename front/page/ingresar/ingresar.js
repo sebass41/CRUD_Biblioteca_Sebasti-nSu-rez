@@ -1,14 +1,10 @@
 window.onload=()=> {
-    insertar();
-}
-
-async function insertar(){
-    let formElement = document.querySelector("#agregar")
+    let formElement = document.querySelectorAll("#agregar")
     
     formElement.onsubmit = async (e) =>{
         e.preventDefault()
         let formData =  new FormData(formElement);
-        let url = "http://localhost/crudusuarios-sebass41/Repositorios/back/controlador/usuario_controlador.php?fun=crear"
+        let url = "http://localhost/crud_biblioteca/back/controlador/libro.php?fun=crear"
 
         let config = {
             method: 'POST',

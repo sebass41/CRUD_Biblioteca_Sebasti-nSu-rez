@@ -1,5 +1,5 @@
 window.onload=()=> {
-    let formElement = document.querySelectorAll("#agregar")
+    let formElement = document.querySelector("#agregar")
     
     formElement.onsubmit = async (e) =>{
         e.preventDefault()

@@ -1,18 +1,18 @@
 window.onload = ()=>{
-    obtenerUsuarios();
+    obtenerLibros();
 }
-async function obtenerUsuarios(){
+async function obtenerLibros(){
     let url = "http://localhost/crud_biblioteca/back/controlador/libro.php?fun=obtener";
     let consulta = await fetch(url);
     let datos = await consulta.json();
     console.log(datos)
-    mostrarUsuarios(datos);
+    mostrarLibro(datos);
 }
 
 
-function mostrarUsuarios(libros){
+function mostrarLibro(libros){
     let tbodyElement = document.querySelector("#tBodyLibros");
-    for (let i=0; i < usuarios.length; i++){
+    for (let i=0; i < libros.length; i++){
         tbodyElement.innerHTML+= `
         <tr>
             <td>${libros[i].id}</td>

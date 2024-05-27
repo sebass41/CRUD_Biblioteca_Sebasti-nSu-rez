@@ -22,17 +22,16 @@ function obtener(){
 }
 
 function ingresar(){
-    $id = $_POST['id'];
     $nombre = $_POST['nombre'];
     $fecha = $_POST['fecha'];
     $precio = $_POST['precio'];
-    $resultado = (new libro())->ingresar($id, $nombre, $fecha, $precio);
+    $resultado = (new libro())->ingresar($nombre, $fecha, $precio);
     echo json_encode($resultado);
 }
 
 function eliminar(){
     $id = $_POST['id'];
-    $resultado = (new usuario())->eliminar($id);
+    $resultado = (new libro())->eliminar($id);
     echo json_encode($resultado);
 }
 

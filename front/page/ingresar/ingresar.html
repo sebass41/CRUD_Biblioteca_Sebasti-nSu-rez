@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inresar</title>
+    <title>Ingresar</title>
+    <script src="ingresar.js"></script>
 </head>
 <body>
     <header>
@@ -16,15 +17,17 @@
     </header>
 
     <main>
-        <form>
+        <form id="agregar">
             <label>Nombre</label>
             <input type="text" name="nombre">
 
             <label>Fecha</label>
-            <input type="date" name="fecha">
+            <input type="text" name="fecha">
 
             <label>Precio</label>
             <input type="text" name="precio">
+
+            <input type="submit" value="Subir">
         </form>
     </main>
 </body>

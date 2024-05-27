@@ -12,9 +12,9 @@ class libro{
         return $libros;
     }
 
-    function ingresar($id, $nombre, $fecha, $precio){
+    function ingresar($nombre, $fecha, $precio){
         $connection = conection();
-        $sql = "INSERT INTO libro VALUES($id, '$nombre', '$fecha', '$precio')";
+        $sql = "INSERT INTO libro VALUES(0, '$nombre', '$fecha', '$precio')";
         $respuesta = $connection->query($sql);
         return $respuesta;
     }

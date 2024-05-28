@@ -25,6 +25,14 @@ class libro{
         $respuesta = $connection->query($sql);
         return $respuesta;
     }
+
+    function modificar ($id, $nombre, $fecha, $precio){
+        $connection = conection();
+        $sql = "UPDATE libro SET nombre = $nombre, fecha = $fecha, precio = $precio WHERE id = $id;";
+        $respuesta = $connection->query($sql);
+        return $respuesta;
+    }
+
 }
 
 

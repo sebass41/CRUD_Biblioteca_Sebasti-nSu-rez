@@ -14,6 +14,9 @@ switch ($funcion){
     case "eliminar":
         eliminar();
     break;
+    case "modificar":
+        modificar();
+    break;
 }
 
 function obtener(){
@@ -32,6 +35,15 @@ function ingresar(){
 function eliminar(){
     $id = $_POST['id'];
     $resultado = (new libro())->eliminar($id);
+    echo json_encode($resultado);
+}
+
+function modificar(){
+    $id = $_POST['id'];
+    $nombre = $_POST['nombre'];
+    $fecha = $_POST['fecha'];
+    $precio = $_POST['precio'];
+    $resultado = (new libro())->modificar($id, $nombre, $fecha, $precio);
     echo json_encode($resultado);
 }
 

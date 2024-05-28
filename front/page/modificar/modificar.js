@@ -1,5 +1,6 @@
 window.onload = ()=>{
     obtenerLibros();
+    modificar();
 }
 
 async function obtenerLibros(){
@@ -19,13 +20,16 @@ function mostrarLibro(libros){
             <td>${libros[i].nombre}</td>
             <td>${libros[i].fecha}</td>
             <td>${libros[i].precio}</td>
-            <td><button onclick="cargarDatos('${libros[i].nombre}', '${libros[i].fecha}', '${libros[i].precio}')">Seleccionar</button></td>
+            <td><button onclick="cargarDatos('${libros[i].id}', '${libros[i].nombre}', '${libros[i].fecha}', '${libros[i].precio}')">Seleccionar</button></td>
         </tr>        
         `;
     }
 }
 
-function cargarDatos(nombre, fecha, precio){
+function cargarDatos(id, nombre, fecha, precio){
+
+    let idInput = document.querySelector("#id");
+    idInput.value = id;
 
     let nombreInput = document.querySelector("#nombre");
     nombreInput.value = nombre;
@@ -52,6 +56,7 @@ async function modificar(){
         
         let respuesta = await fetch(url, config);
         let datos = await respuesta.json();
+        location.reload();
         console.log(datos);
         
 }

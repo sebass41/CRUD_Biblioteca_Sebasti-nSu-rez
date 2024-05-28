@@ -4,7 +4,7 @@ window.onload = ()=>{
 }
 
 async function obtenerLibros(){
-    let url = "http://localhost/crud_biblioteca/back/controlador/libro.php?fun=obtener";
+    let url = "http://localhost/crud_biblioteca/backend/controlador/libro.php?fun=obtener";
     let consulta = await fetch(url);
     let datos = await consulta.json();
     console.log(datos)
@@ -47,7 +47,7 @@ async function modificar(){
     formElement.onsubmit = async (e) =>{
         e.preventDefault()
         let formData =  new FormData(formElement);
-        let url = "http://localhost/crud_biblioteca/back/controlador/libro.php?fun=modificar"
+        let url = "http://localhost/crud_biblioteca/backend/controlador/libro.php?fun=modificar"
 
         let config = {
             method: 'POST',

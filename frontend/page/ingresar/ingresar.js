@@ -4,7 +4,7 @@ window.onload=()=> {
     formElement.onsubmit = async (e) =>{
         e.preventDefault()
         let formData =  new FormData(formElement);
-        let url = "http://localhost/crud_biblioteca/back/controlador/libro.php?fun=crear"
+        let url = "http://localhost/crud_biblioteca/backend/controlador/libro.php?fun=crear"
 
         let config = {
             method: 'POST',

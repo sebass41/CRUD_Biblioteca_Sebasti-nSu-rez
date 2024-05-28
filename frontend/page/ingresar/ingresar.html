@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="eliminar.js"></script>
+    <title>Ingresar</title>
+    <script src="ingresar.js"></script>
+    <link rel="stylesheet" href="ingresar.css">
 </head>
 <body>
     <header>
@@ -16,18 +17,17 @@
         </nav>
     </header>
 
-    <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Fecha</th>
-                    <th>Precio</th>
-                </tr>
-            </thead>
-            <tbody id="tBodyEliminar"></tbody>
-        </table>
-    </main>
+        <form id="agregar">
+            <label>Nombre</label>
+            <input type="text" name="nombre">
+
+            <label>Fecha</label>
+            <input type="date" name="fecha">
+
+            <label>Precio</label>
+            <input type="text" name="precio">
+
+            <input type="submit" value="Subir">
+        </form>
 </body>
 </html>

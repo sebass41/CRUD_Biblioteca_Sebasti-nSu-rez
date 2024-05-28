@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modificar</title>
-    <script src="modificar.js"></script>
+    <title>Document</title>
+    <script src="eliminar.js"></script>
+    <link rel="stylesheet" href="eliminar.css">
 </head>
 <body>
     <header>
@@ -17,22 +18,6 @@
     </header>
 
     <main>
-        <form id="formModificar">
-            <label>ID</label>
-            <input type="text" name="id" id="id">
-
-            <label>Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-
-            <label>Fecha</label>
-            <input type="text" name="fecha" id="fecha">
-
-            <label>Precio</label>
-            <input type="text" name="precio" id="precio">
-
-            <input type="submit" value="Modificar">
-        </form>
-
         <table>
             <thead>
                 <tr>
@@ -40,9 +25,10 @@
                     <th>Nombre</th>
                     <th>Fecha</th>
                     <th>Precio</th>
+                    <th>Acción</th>
                 </tr>
             </thead>
-            <tbody id="tBodyModificar"></tbody>
+            <tbody id="tBodyEliminar"></tbody>
         </table>
     </main>
 </body>

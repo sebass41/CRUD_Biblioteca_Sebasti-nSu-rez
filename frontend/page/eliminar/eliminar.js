@@ -2,7 +2,7 @@ window.onload = ()=>{
     obtenerLibros();
 }
 async function obtenerLibros(){
-    let url = "http://localhost/crud_biblioteca/back/controlador/libro.php?fun=obtener";
+    let url = "http://localhost/crud_biblioteca/backend/controlador/libro.php?fun=obtener";
     let consulta = await fetch(url);
     let datos = await consulta.json();
     console.log(datos)
@@ -12,7 +12,7 @@ async function obtenerLibros(){
 async function eliminarLibro(id){
     let formData = new FormData();
     formData.append("id", id);
-    let url = "http://localhost/crud_biblioteca/back/controlador/libro.php?fun=eliminar";
+    let url = "http://localhost/crud_biblioteca/backend/controlador/libro.php?fun=eliminar";
 
     let config = {
         method: 'POST',
@@ -37,8 +37,6 @@ function mostrarLibro(libros){
             <td>${libros[i].precio}</td>
             <td><button onclick="eliminarLibro(${libros[i].id})">Eliminar</button></td>
         </tr>
-            
-            
         `;
     }
 }

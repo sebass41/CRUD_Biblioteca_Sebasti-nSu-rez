@@ -12,6 +12,14 @@ class libro{
         return $libros;
     }
 
+    function obtenerFecha(){
+        $connection = conection();
+        $sql = "SELECT * FROM libro ORDER BY fecha ASC";
+        $respuesta = $connection->query($sql);
+        $libros = $respuesta->fetch_all(MYSQLI_ASSOC);
+        return $libros;
+    }
+
     function ingresar($nombre, $fecha, $precio){
         $connection = conection();
         $sql = "INSERT INTO libro VALUES(0, '$nombre', '$fecha', '$precio')";
@@ -32,6 +40,7 @@ class libro{
         $respuesta = $connection->query($sql);
         return $respuesta;
     }
+
 
 }
 

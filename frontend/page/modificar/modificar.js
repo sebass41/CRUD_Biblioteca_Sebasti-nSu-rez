@@ -26,7 +26,7 @@ function mostrarLibro(libros){
     }
 }
 
-function cargarDatos(id, nombre, fecha, precio){
+function cargarDatos(id, nombre, fecha, precio){ 
 
     let idInput = document.querySelector("#id");
     idInput.value = id;

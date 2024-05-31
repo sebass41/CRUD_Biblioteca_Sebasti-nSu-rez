@@ -2,6 +2,7 @@
 
 require_once "../modelo/libroDAO.php";
 
+
 $funcion = $_GET['fun'];
 
 switch ($funcion){
@@ -16,6 +17,9 @@ switch ($funcion){
     break;
     case "modificar":
         modificar();
+    break;
+    case "ordenado":
+        mostrarOrdenado();
     break;
 }
 
@@ -47,4 +51,8 @@ function modificar(){
     echo json_encode($resultado);
 }
 
+function mostrarOrdenado(){
+    $resultado = (new libro())->ordenObtener();
+    echo json_encode($resultado);
+}
 ?>

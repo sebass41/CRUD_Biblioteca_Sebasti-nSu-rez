@@ -4,3 +4,11 @@ Stack trace:
 #1 C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php(10): obtener()
 #2 {main}
   thrown in C:\xampp\htdocs\crud_biblioteca\backend\modelo\libroDAO.php on line 10
+[03-Jun-2024 21:35:05 Europe/Berlin] PHP Warning:  Undefined variable $sql in C:\xampp\htdocs\crud_biblioteca\backend\modelo\libroDAO.php on line 28
+[03-Jun-2024 21:35:05 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: mysqli::query(): Argument #1 ($query) cannot be empty in C:\xampp\htdocs\crud_biblioteca\backend\modelo\libroDAO.php:28
+Stack trace:
+#0 C:\xampp\htdocs\crud_biblioteca\backend\modelo\libroDAO.php(28): mysqli->query('')
+#1 C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php(56): libro->ordenObtener('default')
+#2 C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php(22): mostrarOrdenado()
+#3 {main}
+  thrown in C:\xampp\htdocs\crud_biblioteca\backend\modelo\libroDAO.php on line 28

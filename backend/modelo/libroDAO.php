@@ -18,9 +18,13 @@ class libro{
         return $libros;
     }
 
-    function ordenObtener(){
+    function ordenObtener($opcion){
         $connection = conection();
-        $sql = "SELECT * FROM libro ORDER BY fecha ASC";
+        if ($opcion == 'fecha'){
+            $sql = "SELECT * FROM libro ORDER BY fecha ASC";
+        } else if ($opcion == 'precio'){
+            $sql = "SELECT * FROM libro ORDER BY precio ASC";
+        }
         $respuesta = $connection->query($sql);
         $libros = $respuesta->fetch_all(MYSQLI_ASSOC);
         return $libros;

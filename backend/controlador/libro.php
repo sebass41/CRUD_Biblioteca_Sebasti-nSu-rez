@@ -52,7 +52,8 @@ function modificar(){
 }
 
 function mostrarOrdenado(){
-    $resultado = (new libro())->ordenObtener();
+    $opcion = $_POST['opcion'];
+    $resultado = (new libro())->ordenObtener($opcion);
     echo json_encode($resultado);
 }
 ?>

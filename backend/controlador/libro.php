@@ -18,7 +18,7 @@ switch ($funcion){
     case "modificar":
         modificar();
     break;
-    case "ordenado":
+    case "ordenar":
         mostrarOrdenado();
     break;
 }

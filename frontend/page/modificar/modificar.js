@@ -14,6 +14,7 @@ async function obtenerLibros(){
 function mostrarLibro(libros){
     let tbodyElement = document.querySelector("#tBodyModificar");
     for (let i=0; i < libros.length; i++){
+        tbodyElement.innerHTML = "";
         tbodyElement.innerHTML+= `
         <tr>
             <td>${libros[i].id}</td>
@@ -56,7 +57,6 @@ async function modificar(){
         
         let respuesta = await fetch(url, config);
         let datos = await respuesta.json();
-        location.reload();
         console.log(datos);
         
 }

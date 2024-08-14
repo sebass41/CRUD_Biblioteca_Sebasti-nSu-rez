@@ -12,3 +12,16 @@ Stack trace:
 #2 C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php(22): mostrarOrdenado()
 #3 {main}
   thrown in C:\xampp\htdocs\crud_biblioteca\backend\modelo\libroDAO.php on line 28
+[03-Jun-2024 22:06:38 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[03-Jun-2024 22:07:26 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[03-Jun-2024 22:07:28 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[03-Jun-2024 22:09:28 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[03-Jun-2024 22:09:30 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[03-Jun-2024 22:09:33 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[03-Jun-2024 22:11:01 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[03-Jun-2024 22:11:03 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[03-Jun-2024 22:11:16 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[03-Jun-2024 22:11:35 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[07-Jun-2024 22:10:29 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[07-Jun-2024 22:15:16 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56
+[07-Jun-2024 22:15:18 Europe/Berlin] PHP Warning:  Undefined array key "orden" in C:\xampp\htdocs\crud_biblioteca\backend\controlador\libro.php on line 56

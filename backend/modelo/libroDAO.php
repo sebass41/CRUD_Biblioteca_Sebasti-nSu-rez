@@ -1,6 +1,7 @@
 <?php
 
 require_once "../conexion/conexion.php";
+require_once "respuesta/respuesta.php";
 
 ini_set('display_errors', '0');
 ini_set('display_startup_errors', '0');
@@ -11,6 +12,7 @@ ini_set('error_log', '../log/php_errors.log');
 class libro{
 
     function obtener(){
+        
         $connection = conection();
         $sql = "SELECT * FROM libro;";
         $respuesta = $connection->query($sql);
@@ -34,7 +36,14 @@ class libro{
         $connection = conection();
         $sql = "INSERT INTO libro VALUES(0, '$nombre', '$fecha', '$precio')";
         $respuesta = $connection->query($sql);
-        return $respuesta;
+
+        if ($respuesta){
+            $msj = "Se Insertó correctamente";
+            return new Respuesta(true, $msj, $respuesta);
+        }else{
+            $msj = "No se pudo insertar";
+            return new Respuesta(false, $msj, $respuesta);
+        }
     }
 
     function eliminar ($id){
